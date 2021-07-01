@@ -12,6 +12,7 @@ let mapleader = " "
 nmap <leader>gs  :CocSearch
 nmap <leader>fs :FZF<CR>
 nmap <leader>rg :Rg<CR>
+set mouse=a
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
@@ -292,7 +293,7 @@ nnoremap <silent>be :BufferLineSortByExtension<CR>
 nnoremap <silent>bd :BufferLineSortByDirectory<CR>
 nnoremap <silent><mymap> :lua require'bufferline'.sort_buffers_by(function (buf_a, buf_b) return buf_a.id < buf_b.id end)<CR>
 
-source ~/AppData/Local/nvim/plugins/bufferline.vim 
+source ~/.config/nvim/plugins/bufferline.vim 
 
 
 if (has("nvim"))
